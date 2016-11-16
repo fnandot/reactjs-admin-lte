@@ -21,7 +21,7 @@ const Layout = ({ skin, type, children }) => {
 
   classes[`skin-${skin}`] = true;
 
-  if (type === 'sidebar-collapsed') {
+  if (type === 'sidebar-collapsed' || type === 'fixed') {
     classes[type] = true;
   } else {
     classes[`layout-${type}`] = true;

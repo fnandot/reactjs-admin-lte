@@ -10,7 +10,7 @@ test('<Layout>', t => {
     </Layout>);
 
   t.ok(wrapper.hasClass('sidebar-mini'), 'has sidebar-mini class');
-  t.ok(wrapper.hasClass('layout-fixed'), 'has type fixed');
+  t.ok(wrapper.hasClass('fixed'), 'has type fixed');
   t.ok(wrapper.hasClass('skin-blue'), 'blue skin is used');
   t.ok(wrapper.children().hasClass('wrapper'), 'renders child wrapper');
   t.ok(wrapper.contains(<div className="wrapper"><p>asdf</p></div>), 'contains children');
