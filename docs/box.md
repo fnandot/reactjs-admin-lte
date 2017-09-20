@@ -24,9 +24,11 @@ specific containers.
 
 #### Props
   - __style__ (string) - Changes the color of the box. One of `default`, `primary`, `success`, 
-  `warning`, or `danger`. Defaults to `default`.
+  `warning`, or `danger`.
+  
+  - __collapsed__ (bool) - If true, the body of the box will be collapsed.
 
-  - __type__ (string) - Changes the look of the box. One of `widget` or `solid`.
+  - __solid__ (bool) - If true, the box header will be a solid color.
 
   - __loading__ (bool) - If true, the box will show a spinner instead of its children. Defaults to false.
 
@@ -38,7 +40,7 @@ specific containers.
 `<Box.Body>` - Body of the container.
 
 #### Props
- - __padding__ (bool) - Padding for the content of the body. Defaults to true.
+ - __noPadding__ (bool) - Removes padding from body body. Defaults to false.
 
  - __children__ (node) - What you want to render in the BoxBody.
 
@@ -63,15 +65,15 @@ specific containers.
  - __className__ (string) - Additional classes you would like to add.
 
 ## BoxTitle
-`<Box.Header.Title>` - Title of the box.
+`<Box.Title>` - Title of the box.
 
 #### Props
- - __text__ (string) - The title text.
+ - __children__ (node) - What you want to render in BoxTitle.
 
  - __className__ (string) - Additional classes you would like to add.
 
 ## BoxTools
-`<Box.Header.Tools>` - Controls for the box, typically buttons and/or button groups, located in the 
+`<Box.Tools>` - Controls for the box, typically buttons and/or button groups, located in the 
 box header on the right-hand side by default.
 
 #### Props
@@ -94,5 +96,18 @@ default.
 
  - __className__ (string) - Additional classes you would like to add.
 
+## BoxCollapsedToggleButton
+`<Box.CollapsedToggleButton>` - Button to toggle the collapsed state of the parent box.
+
+#### Props
+
+ - __className__ (string) - Additional classes you would like to add.
+ 
+## BoxRemoveButton
+`<Box.RemoveButton>` - Button to remove a box from view.
+
+#### Props
+
+ - __className__ (string) - Additional classes you would like to add.
 
 [box-component]: https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#component-box
